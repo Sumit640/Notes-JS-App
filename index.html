@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="notes_title">
+        <p>Notes App</p>
+      </div>
+      <input type="text" placeholder="Search notes..." id="search" />
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <button id="newNoteBtn">+ New Note</button>
+
+        <ul id="notesList">
+          <li class="note-item">First Note</li>
+          <li class="note-item">Project Ideas</li>
+        </ul>
+      </aside>
+
+      <main class="editor">
+        <input type="text" placeholder="Note title..." id="noteTitle" />
+
+        <textarea id="noteContent" placeholder="Start writing..."></textarea>
+
+        <p id="saveStatus">Saved</p>
+      </main>
+    </div>
+  </body>
+</html>
